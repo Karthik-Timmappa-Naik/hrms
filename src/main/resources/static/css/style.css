@@ -1,0 +1,232 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #f2f7f9; /* Soft teal background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #005f73; /* Rich teal */
+    color: #ffffff; /* White text */
+    padding: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.8rem;
+    border-bottom: 4px solid #0a9396; /* Lighter teal accent */
+}
+
+header .logo {
+    height: 80px;
+    width: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #e0f4f3; /* Very light teal */
+    width: 100%;
+}
+
+h1 {
+    color: #002233; /* Deep navy for contrast */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+    color: #005f73; /* Teal label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid #c2d5d7; /* Soft teal border */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:hover {
+    border-color: #0a9396; /* Highlighted teal */
+    box-shadow: 0 0 8px rgba(10, 147, 150, 0.3); /* Subtle glow */
+}
+
+button {
+    background-color: #0a9396; /* Vibrant teal */
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005f73; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight scaling for interaction */
+}
+
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #004147; /* Deep teal for text */
+    border-bottom: 1px solid #e9ecef;
+}
+
+.table th {
+    background-color: #0a9396; /* Teal headers */
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray for even rows */
+}
+
+.table tr:hover {
+    background-color: #d1e8e9; /* Light teal hover effect */
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.pagination a {
+    color: #0a9396;
+    padding: 0.5rem 1rem;
+    border: 1px solid #0a9396;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #0a9396;
+    color: white;
+}
+
+/* Action Buttons */
+.action-buttons form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.action-buttons .btn-delete {
+    background-color: #e63946; /* Vibrant red */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons .btn-delete:hover {
+    background-color: #d62828; /* Darker red */
+}
+
+.action-buttons .btn-update {
+    background-color: #0284c7; /* Blue for update */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons .btn-update:hover {
+    background-color: #0369a1; /* Darker blue */
+}
+
+/* Division Colors */
+td.division-FAIL {
+    color: #e63946; /* Red for fail */
+}
+
+td.division-3RD {
+    color: #ff8c00; /* Orange for 3rd division */
+}
+
+td.division-2ND {
+    color: #f4a261; /* Warm gold for 2nd division */
+}
+
+td.division-1ST {
+    color: #0a9396; /* Teal for 1st division */
+}
+
+/* Card Design */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    padding: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
